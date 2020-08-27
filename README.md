@@ -21,3 +21,9 @@ This is an application meant to replace conventional way of queue management in 
 ## Visitor Page
 * Select the purpose of visiting
 * Fill out the necessary document
+
+# Contributors
+* Enggar Dwi Prihastomo (Frontend and Manager)
+* Arif Suganda (Backend)
+* Zein (UI Design)
+* Olivia (Voice over)
