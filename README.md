@@ -2,7 +2,7 @@
 ![snapshots](https://github.com/enggardwiprihastomo/customer-queue-management-system/blob/master/snapshots.png)
 
 # Description
-This is an application meant to replace conventional way of queue management in the government office. This application was developed in a temporary contract with Tax Sercvice Office Palu in Indonesia. The contact was last for 3 months from July-September 2018.
+This is an application meant to replace conventional way of queue management in the government office. This application was developed in a temporary contract with Tax Sercvice Office Palu in Indonesia. The contact lasted for 3 months from July-September 2018.
 
 # Features
 ## Administrator Page
