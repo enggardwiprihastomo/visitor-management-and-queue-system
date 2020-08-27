@@ -1,0 +1,74 @@
+body{
+	background-image: url("../asset/bg.png");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.loginborder{
+	height: 480px;
+	width: 450px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+.loginborder table{
+	height: 90%;
+	width: 80%;
+}
+
+.loginborder td{
+	color: white;
+	font-family: "Abel";
+	font-size: 24px;
+	text-align: center;
+}
+
+.loginborder img{
+	height: 60px;
+	width: auto;
+}
+
+.loginborder input[type="text"], .loginborder input[type="password"], .loginborder input[type="password"], .loginborder select{
+	border:none;
+	outline: none;
+	border-radius: 20px;
+	width: 100%;
+	padding: 12px;
+	color: gray;
+	font-size: 14px;
+	font-family: "Gotham";
+	text-align: center;
+	text-align-last:center; 
+	transition: all 0.15s ease;
+}
+
+.loginborder option{
+	text-align-last:center;
+}
+
+.loginborder input[type="text"]:focus, .loginborder input[type="password"]:focus, .loginborder input[type="password"]:focus, .loginborder select:focus{
+	background-color: rgb(232, 243, 255);
+}
+
+.loginborder button{
+	border:none;
+	outline: none;
+	border-radius: 20px;
+	width: 150px;
+	padding: 12px;
+	color: white;
+	font-size: 14px;
+	font-family: "Gotham";
+	text-align: center;
+	background-color: rgb(92, 164, 247);
+	transition: all 0.5s ease;
+}
+
+.loginborder button:hover, .loginborder button:focus{
+	background-color: rgb(241, 196, 15);
+}

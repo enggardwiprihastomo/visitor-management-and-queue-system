@@ -1,0 +1,32 @@
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+table{
+	width: 100%;
+	height: 20%;
+}
+
+td{
+	text-align: center;
+}
+
+img{
+	width: 40%;
+	height: auto;
+}
+
+.maincapt{
+	color: rgb(45, 60, 76);
+	font-weight: bold;
+	font-family: "Gotham";
+	font-size: 50px;
+}
+
+.desccapt{
+	color: gray;
+	font-family: "Gotham";
+	font-size: 18px;
+}

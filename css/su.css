@@ -1,0 +1,507 @@
+body{
+	background-image: url("../asset/bg.png");
+	background-size: 100% 100%;
+	background-repeat: repeat-y;
+}
+
+@keyframes scaling{
+	0%{
+		transform: scale(1);
+	}
+	50%{
+		transform: scale(0.9);
+	}
+	100%{
+		transform: scale(1);
+	}
+}
+
+.header{
+	height: 100px;
+	width: calc(100% - 80px);
+	margin-left: 40px;
+	margin-right: 40px;
+	margin-top: 10px;
+}
+
+.header table{
+	width: 100%;
+	height: 100%;
+}
+.header td{
+	font-size: 36px;
+	font-family: "Abel";
+	color: white;
+	text-align: center;
+	vertical-align: middle;
+	padding: 10px;
+}
+
+.header .logo{
+	height: 100%;
+	width: 10%;
+}
+
+.header .logo img{
+	height: 90px;
+	width: auto;
+}
+
+.header .title{
+	height: 100%;
+	width: 70%;
+	text-align: left;
+}
+
+.header .datetime{
+	height: 100%;
+	width: 15%;
+	border-right: 2px solid white;
+}
+
+.header .logout{
+	height: 100%;
+	width: 5%;
+}
+
+.header .logout button{
+	outline: none;
+	border: none;
+	background-color: transparent;
+}
+
+.header .logout button:hover{
+	animation-name: scaling;
+	animation-duration: 0.5s;
+}
+
+.header .logout img{
+	height: 50px;
+	width: auto;
+}
+
+#CurrentTime{
+	font-family:"Gotham";
+	font-size: 40px;
+	text-align: center;
+	font-weight: bold;
+}
+
+#CurrentDate{
+	color: white;
+	font-family:"Gotham";
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+	color: rgb(241, 196, 15);
+}
+
+.content{
+	height: calc(100% - 130px);
+	width: calc(100% - 40px);
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top: 10px;
+}
+
+.content table{
+	width: 100%;
+}
+
+.content td{
+	padding: 10px;
+}
+
+.content .table,
+.content .defaultmedia{
+	width: 50%;
+	height: 300px;
+}
+
+.content .employee,
+.content .runningtext,
+.content .resend{
+	width: 100%;
+	height: 300px;
+}
+
+.content .table .tablediv,
+.content .runningtext .runningtextdiv,
+.content .employee .employeediv,
+.content .defaultmedia .defaultmediadiv,
+.content .resend .resenddiv{
+	height: 100%;
+	width: 100%;
+	border-radius: 10px;
+	background-color: rgba(232, 243, 255, 0.8);
+}
+
+.content .table .tablediv table,
+.content .defaultmedia .defaultmediadiv table{
+	height: 100%;
+	width: 100%;
+	margin: 0px;
+}
+
+.content .table .tablediv td,
+.content .defaultmedia .defaultmediadiv td{
+	text-align: center;
+	vertical-align: middle;
+}
+
+.content .table .tablediv .tabledivimg,
+.content .defaultmedia .defaultmediadiv .defaultmediaimg{
+	width: 40%;
+	font-family: "Gotham";
+	font-size: 24px;
+	font-weight: bold;
+	color: rgb(92, 164, 247);
+}
+
+.content .table .tablediv .tabledivinput,
+.content .defaultmedia .defaultmediadiv .defaultmediainput{
+	width: 60%;
+	color: gray;
+	font-family: "Gotham";
+	font-size: 16px;
+}
+
+.content .runningtext .runningtextdiv td{
+	text-align: center;
+	vertical-align: middle;
+}
+
+.content .runningtext .runningtextdiv table,
+.content .employee .employeediv table,
+.content .resend .resenddiv table{
+	height: 100%;
+	width: 100%;
+	margin: 0px;
+}
+
+.content .employee .employeediv td,
+.content .resend .resenddiv td{
+	text-align: center;
+	vertical-align: middle;
+}
+
+.content .runningtext .runningtextdiv .runningtextdivinput{
+	width: 35%;
+	font-family: "Gotham";
+	font-size: 24px;
+	font-weight: bold;
+	color: rgb(92, 164, 247);
+}
+
+.content .table .tablediv img,
+.content .runningtext .runningtextdiv img{
+	height: auto;
+	width: 150px;
+}
+
+.content .defaultmedia .defaultmediadiv img{
+	height: auto;
+	width: 100px;
+}
+
+.content .employee .employeediv img{
+	height: auto;
+	width: 40px;
+}
+
+.content .resend .resenddiv img{
+	height: auto;
+	width: 150px;
+}
+
+.content .runningtext .runningtextdiv .runningtextdivinput input[type="text"],
+.content .employee .employeediv .employeedivinput input[type="text"],
+.content .employee .employeediv .employeedivinput select{
+	font-family: "Gotham";
+	font-size: 14px;
+	font-weight: normal;
+	text-align: center;
+	text-align-last: center;
+	color: gray;
+	border:none;
+	padding: 5px;
+	outline: none;
+	border-bottom: 1px solid gray;
+	background-color: transparent;
+	width: 100%;
+}
+
+.content .runningtext .runningtextdiv .runningtextdivinput input[type="text"]:focus,
+.content .employee .employeediv .employeedivinput input[type="text"]:focus,
+.content .employee .employeediv .employeedivinput select:focus{
+	border-bottom: 1px solid rgb(92, 164, 247);
+}
+
+.content .table .tablediv .tabledivinput select{
+	font-family: "Gotham";
+	font-size: 14px;
+	font-weight: normal;
+	text-align: center;
+	text-align-last: center;
+	color: gray;
+	border:none;
+	padding: 5px;
+	outline: none;
+	border-bottom: 1px solid gray;
+	background-color: transparent;
+	width: 100%;
+}
+
+.content .runningtext .runningtextdiv .runningtextdivlist{
+	width: 65%;
+	vertical-align: top;
+}
+
+.content .runningtext .runningtextdiv .runningtextdivlist .divlist,
+.content .employee .employeediv .employeedivlist .divlist,
+.content .resend .resenddiv .resenddivlist .divlist{
+	height: 100%;
+	width: 100%;
+	overflow: auto;
+}
+
+.content .runningtext .runningtextdiv .runningtextdivlist .divlist table,
+.content .employee .employeediv .employeedivlist .divlist table,
+.content .resend .resenddiv .resenddivlist .divlist table{
+	height: auto;
+	width: 100%;
+}
+
+.content .runningtext .runningtextdiv .runningtextdivlist .divlist th,
+.content .employee .employeediv .employeedivlist .divlist th,
+.content .resend .resenddiv .resenddivlist .divlist th{
+	font-family: "Gotham";
+	font-size: 14px;
+	font-weight: normal;
+	color: white;
+	background-color: rgb(92, 164, 247);
+	vertical-align: middle;
+	text-align: center;
+	padding: 10px;
+}	
+
+.content .runningtext .runningtextdiv .runningtextdivlist .divlist td,
+.content .employee .employeediv .employeedivlist .divlist td,
+.content .resend .resenddiv .resenddivlist .divlist td{
+	font-family: "Gotham";
+	font-size: 12px;
+	font-weight: normal;
+	color: rgb(92, 164, 247);
+	padding: 10px;
+	cursor: pointer;
+}
+
+.content .runningtext .runningtextdiv .runningtextdivlist .divlist tr:hover td,
+.content .employee .employeediv .employeedivlist .divlist tr:hover td,
+.content .resend .resenddiv .resenddivlist .divlist tr:hover td{
+	background-color: rgb(241, 196, 15);
+	color: white;
+}
+
+.content .runningtext .runningtextdiv .runningtextdivlist .divlist .runningtextcaption,
+.content .resend .resenddiv .resenddivlist .divlist .resendnumber{
+	width: 95%;
+	text-align: left;
+}
+
+.content .employee .employeediv .employeedivlist .divlist .employeename{
+	width: 55%;
+	text-align: left;
+}
+
+.content .employee .employeediv .employeedivlist .divlist .employeetype{
+	width: 40%;
+	text-align: left;
+}
+
+.content .runningtext .runningtextdiv .runningtextdivlist .divlist .runningtextdelete,
+.content .employee .employeediv .employeedivlist .divlist .employeedelete,
+.content .resend .resenddiv .resenddivlist .divlist .resendicon{
+	width: 5%;
+}
+
+.content .runningtext .runningtextdiv .runningtextdivlist .divlist .runningtextdelete button,
+.content .employee .employeediv .employeedivlist .divlist .employeedelete button{
+	width: 30px;
+	height: 30px;
+	background-image: url("../asset/delete.png");
+	background-size: 50% 60%;
+	background-repeat: no-repeat;
+	background-position: center;
+	border: none;
+	outline: none;
+	background-color: transparent;
+}
+
+.content .runningtext .runningtextdiv .runningtextdivlist .divlist tr:hover button,
+.content .employee .employeediv .employeedivlist .divlist tr:hover button{
+	background-image: url("../asset/trash.png");
+}
+
+.content .resend .resenddiv .resenddivlist .divlist .resendicon button{
+	width: 30px;
+	height: 30px;
+	background-image: url("../asset/resend.png");
+	background-size: 50% 60%;
+	background-repeat: no-repeat;
+	background-position: center;
+	border: none;
+	outline: none;
+	background-color: transparent;
+}
+
+.content .resend .resenddiv .resenddivlist .divlist tr:hover button{
+	background-image: url("../asset/resendwhite.png");
+}
+
+.content .employee .employeediv .employeedivinput{
+	width: 35%;
+	font-family: "Gotham";
+	font-size: 12px;
+	font-weight: bold;
+	color: rgb(92, 164, 247);
+}
+
+.content .resend .resenddiv .resenddivimg{
+	width: 35%;
+	font-family: "Gotham";
+	font-size: 24px;
+	font-weight: bold;
+	color: rgb(92, 164, 247);
+}
+
+.content .employee .employeediv .employeedivlist,
+.content .resend .resenddiv .resenddivlist{
+	width: 65%;
+	vertical-align: top;
+}
+
+.btnmin{
+	height: 50px;
+	width: 50px;
+	border:none;
+	border-radius: 10px 0px 0px 10px;
+	outline: none;
+	background-color: white;
+	color: rgb(92, 164, 247);
+	font-weight: bold;
+	font-size: 16px;
+	transition: all 0.5s ease;
+	margin-right: -5px;
+}
+
+.btnplus{
+	height: 50px;
+	width: 50px;
+	border:none;
+	border-radius: 0px 10px 10px 0px;
+	outline: none;
+	background-color: white;
+	color: rgb(92, 164, 247);
+	font-weight: bold;
+	font-size: 16px;
+	transition: all 0.5s ease;
+	margin-left: -5px;
+}
+
+.btnmin:hover,
+.btnplus:hover,
+.btnmin:focus,
+.btnplus:focus{
+	background-color: white;
+	color: rgb(241, 173, 15);
+}
+
+.terminalqty{
+	height: 50px;
+	width: 60px;
+	outline: none;
+	border: none;
+	background-color: rgb(92, 164, 247);
+	color: white;
+	border-radius: 0px;
+	font-weight: bold;
+	font-size: 16px;
+
+}
+
+.btnok{
+	font-family: "Gotham";
+	font-size: 14px;
+	font-weight: normal;
+	color: white;
+	border:none;
+	border-radius: 5px;
+	outline: none;
+	background-color: rgb(92, 164, 247);
+	height: 40px;
+	width: 200px;
+	padding: 10px;
+	transition: all 0.5s ease; 
+}
+
+.btnok:hover{
+	background-color: rgb(241, 173, 15);
+}
+
+input[type="radio"]:checked,
+input[type="radio"]:not(:checked) {
+	  position: absolute;
+	  opacity: 0;
+}
+
+input[type="radio"]:checked + label,
+input[type="radio"]:not(:checked) + label
+{
+    position: relative;
+    cursor: pointer;
+    padding-left: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: normal;
+    font-family: "Gotham";
+}
+
+input[type="radio"]:checked + label:before,
+input[type="radio"]:not(:checked) + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 14px;
+    height: 14px;
+    border: 1px solid gray;
+    border-radius: 100%;
+    background: transparent;
+}
+
+input[type="radio"]:checked + label:after,
+input[type="radio"]:not(:checked) + label:after {
+    content: '';
+    width: 8px;
+    height: 8px;
+    background: rgb(241, 196, 15);
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+input[type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+input[type="radio"]:checked + label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}

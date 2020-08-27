@@ -1,0 +1,233 @@
+body{
+	background-image: url("../asset/bg.png");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.header{
+	height: 120px;
+	width: calc(100% - 80px);
+	margin-left: 40px;
+	margin-right: 40px;
+	margin-top: 20px;
+}
+
+.header table{
+	width: 100%;
+	height: 100%;
+}
+.header td{
+	font-size: 40px;
+	font-family: "Abel";
+	color: white;
+	text-align: center;
+	vertical-align: middle;
+	padding: 10px;
+}
+
+.header .logo{
+	height: 100%;
+	width: 10%;
+}
+
+.header .logo img{
+	height: 100px;
+	width: auto;
+}
+
+.header .title{
+	height: 100%;
+	width: 65%;
+	text-align: left;
+}
+
+.header .terminal{
+	height: 100%;
+	width: 10%;
+	border-right: 2px solid white;
+}
+
+.header .datetime{
+	height: 100%;
+	width: 15%;
+}
+
+#CurrentDate{
+	color: white;
+	font-family:"Gotham";
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+	vertical-align: top;
+	color: rgb(241, 196, 15);
+}
+
+#CurrentTime{
+	color: white;
+	font-family:"Gotham";
+	font-size: 40px;
+	text-align: center;
+	font-weight: bold;
+	vertical-align: bottom;
+}
+
+#TerminalDesc{
+	color: white;
+	font-family:"Gotham";
+	font-size: 16px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+#TerminalName{
+	color: white;
+	font-family:"Gotham";
+	font-size: 80px;
+	font-weight: bold;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.displaycontent{
+	height: calc(100% - 190px);
+	width: calc(100% - 80px);
+	margin-left: 40px;
+	margin-right: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.displaycontent table{
+	width: 100%;
+}
+
+.displaycontent td{
+	padding: 10px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.queuesection{
+	width: 30%;
+}
+
+.videosection{
+	width: 70%;
+}
+
+.runningtext{
+	width: 100%;
+	height: 50px;
+	background-color: rgb(92, 164, 247);
+	display: flex;
+	align-items: center;
+	color: white;
+	font-family: "Gotham";
+	font-size: 26px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.runningtext img{
+	height: 50%;
+	width: auto;
+	margin-right: 10px;
+	margin-left: 10px; 
+	margin-top: -4px;
+}
+
+.onlinetv{
+	height: 450px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: auto;
+}
+
+.locketsection{
+	height: 120px;
+	width: 100%;
+	background-color: rgb(242, 162, 13);
+	color: white;
+	font-weight: bold;
+	font-size: 2.8vw;
+	border-radius: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.activequeuesection{
+	height: 310px;
+	width: 100%;
+	background-color: white;
+	border-radius: 10px;
+}
+
+.queuedesc{
+	height: 30%;
+	width: 100%;
+	background-color: rgb(92, 164, 247);
+	color: white;
+	font-family: "Gotham";
+	font-size: 2.5vw;
+	font-weight: bold;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 10px 10px 0px 0px;
+}
+
+.queuenumber{
+	height: 70%;
+	width: 100%;
+	color: rgb(92, 164, 247);
+	font-family: "Gotham";
+	font-size: 5.5vw;
+	font-weight: bold;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 0px 0px 10px 10px;
+}
+
+.waitingqueuesection{
+	height: 120px;
+	width: 100%;
+	background-color: white;
+	color: white;
+	font-weight: bold;
+	font-size: 2vw;
+	font-family: "Gotham";
+	border-radius: 10px;
+}
+
+.waitingdesc{
+	height: 35%;
+	width: 100%;
+	color: rgb(92, 164, 247);
+	font-family: "Gotham";
+	font-size: 2vw;
+	font-weight: bold;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 10px 10px 0px 0px;
+}
+
+.waitingnumber{
+	height: 65%;
+	width: 100%;
+	color: rgb(92, 164, 247);
+	font-family: "Gotham";
+	font-size: 70px;
+	font-weight: bold;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 0px 0px 10px 10px;
+}

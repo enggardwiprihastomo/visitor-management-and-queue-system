@@ -1,0 +1,457 @@
+.dropdownbutton{
+	position: absolute;
+	top: 20px;
+	right: 12px;
+	height: 10px;
+	width: 20px;
+	cursor: pointer;
+	transform: scale(0.8);
+	transition: all 0.5s;
+	z-index: 1;
+}
+
+.dropdownbutton img{
+	height: 100%;
+	width: auto;
+}
+
+.dropdownbutton:hover{
+	transform: scale(1);
+}
+
+.dropdownbox{
+	height: 120px;
+	width: 200px;
+	position: absolute;
+	background-color: white;
+	top: 10px;
+	right: 5px;
+	border-radius: 10px;
+	box-shadow: 0pt 4pt 8pt 0pt rgba(0,0,0,0.2);
+	top: -130px;
+}
+
+.buttonstate{
+	height: 100%;
+	width: 100%;
+	background-image: url("../asset/arrowdown.png");
+	background-size: 100% 100%;
+}
+
+.dropdownboxtransform, .down{  
+  transition: all 0.5s ease;
+}
+
+.up{
+	transform: rotate(180deg);
+	background-image: url("../asset/arrowup.png");
+}
+
+.dropdownboxtransformactive{
+	top: 10px;
+}
+
+.dropdownbox table{
+	width: 100%;
+	height: 100%;
+}
+
+.dropdownbox table img{
+	height: 40px;
+	width: auto;
+}
+
+.dropdownbox table td{
+	text-align: center;
+	width: 50%;
+}
+
+.dropdownbox label{
+	font-weight: bold;
+	font-size: 10px;
+	font-family: "Gotham";
+	cursor: pointer;
+}
+
+.dropdownbox input[type="radio"]:checked,
+.dropdownbox input[type="radio"]:not(:checked) {
+	  position: absolute;
+	  opacity: 0;
+}
+
+.dropdownbox input[type="radio"]:checked + label,
+.dropdownbox input[type="radio"]:not(:checked) + label
+{
+    position: relative;
+    cursor: pointer;
+    top: -6px;
+    left: -6px;
+    display: inline-block;
+}
+
+.dropdownbox input[type="radio"]:checked + label:before,
+.dropdownbox input[type="radio"]:not(:checked) + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 14px;
+    height: 14px;
+    border: 1px solid rgb(92, 164, 247);
+    border-radius: 100%;
+    background: #fff;
+}
+
+.dropdownbox input[type="radio"]:checked + label:after,
+.dropdownbox input[type="radio"]:not(:checked) + label:after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background: rgb(92, 164, 247);
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+.dropdownbox input[type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+.dropdownbox input[type="radio"]:checked + label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.header{
+	height: 350px;
+	width: 100%;
+}
+
+.header img{
+	height: auto;
+	width: 100%;
+}
+
+.back{
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	height: 35px;
+	width: 35px;
+	cursor: pointer;
+}
+
+.back:hover{
+	animation-name: swinging;
+	animation-duration:0.5s;
+}
+
+.back img{
+	height: 100%;
+	width: auto;
+}
+
+.inputform{
+	height: calc(100% - 350px);
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.inputform table{
+	width: 50%;
+}
+
+.inputform .counselingtable{
+	width: 50%;
+}
+
+
+.inputform .subtable{
+	width: 100%;
+}
+
+.inputform .subtablenpwp{
+	width: 100%;
+}
+
+.inputform .subtablenpwp td{
+	padding: 0px;
+}
+
+.inputform .subtable td{
+	padding: 0px;
+	text-align: center;
+}
+
+.inputform th{
+	font-weight: bold;
+	font-family: "Gotham";
+	font-size: 24px;
+	color: rgb(45, 60, 76);
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+.inputform td{
+	font-family: "Gotham";
+	font-size: 14px;
+	color: gray;
+	text-align: center;
+	padding: 12px;
+}
+
+.inputform input[type="text"]{
+	border:none;
+	padding: 5px;
+	outline: none;
+	border-bottom: 1px solid gray;
+	width: 100%;
+}
+
+.inputform input[type="text"]:focus{
+	border-bottom: 1px solid rgb(92, 164, 247);
+}
+
+.inputform button{
+	border:none;
+	padding: 10px;
+	outline: none;
+	background-color: rgb(92, 164, 247);
+	color: white;
+	border-radius: 5px;
+	width: 120px;
+	transition: all 0.25s ease;
+}
+
+.inputform button:hover, .inputform button:focus{
+	background-color: rgb(241, 173, 15);
+}
+
+.inputform input[type="file"]{
+	display: none;
+}
+
+.inputform img{
+	height: 20px;
+	width: auto;
+	cursor: pointer;
+}
+
+.inputform img:hover{
+	animation-name: swinging;
+	animation-duration:0.5s;
+}
+
+.uploadfile{
+	width: 80px;
+	height: 80px;
+	background-image: url("../asset/upload.png");
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 50%;
+	cursor: pointer;
+	opacity: 0.8;
+	transition: all 0.5s ease;
+}
+
+.uploadfile:hover{
+	opacity: 1;
+}
+
+.inputform label{
+	font-weight: normal;
+	font-size: 14px;
+	font-family: "Gotham";
+	cursor: pointer;
+}
+
+.inputform input[type="radio"]:checked,
+.inputform input[type="radio"]:not(:checked) {
+	  position: absolute;
+	  opacity: 0;
+}
+
+.inputform input[type="radio"]:checked + label,
+.inputform input[type="radio"]:not(:checked) + label
+{
+    position: relative;
+    cursor: pointer;
+    top: 0px;
+    padding-left: 18px;
+    margin-right: 10px;
+    left: 0px;	
+    display: inline-block;
+}
+
+.inputform input[type="radio"]:checked + label:before,
+.inputform input[type="radio"]:not(:checked) + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 14px;
+    height: 14px;
+    border: 1px solid rgb(92, 164, 247);
+    border-radius: 100%;
+    background: #fff;
+}
+
+.inputform input[type="radio"]:checked + label:after,
+.inputform input[type="radio"]:not(:checked) + label:after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background: rgb(92, 164, 247);
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+.inputform input[type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+.inputform input[type="radio"]:checked + label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+select{
+	border:none;
+	padding: 5px;
+	outline: none;
+	border-bottom: 1px solid gray;
+	width: 100%;
+}
+
+@keyframes swinging{
+	30%{
+		transform: rotate(10deg);
+	}
+	70%{
+		transform: rotate(-10deg);
+	}
+	100%{
+		transform: rotate(0deg);
+	}
+}
+
+.popupnpwp{
+	width: 500px;
+	background-color: white;
+}
+
+.popupnpwp table{
+	width: 100%;
+}
+
+.popupnpwp th{
+	font-family: "Gotham";
+	font-size: 14px;
+	font-weight: bold;
+	background-color: rgb(92, 164, 247);
+	color: white;
+	padding: 10px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.popupnpwp td{
+	font-family: "Gotham";
+	font-size: 14px;
+	font-weight: normal;
+	color: gray;
+	padding: 10px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.popupnpwp tr:nth-child(even) {background: #eee}
+.popupnpwp tr:nth-child(odd) {background: #fff}
+ 
+.popupnpwp input[type="checkbox"] {
+    position: relative;
+    cursor: pointer;
+    padding: 0;
+  }
+
+.popupnpwp input[type="checkbox"]:before {
+    content: '';
+    display: inline-block;
+    vertical-align: text-top;
+    width: 18px;
+    height: 18px;
+    background: white;
+  }
+
+
+.popupnpwp input[type="checkbox"]:checked:before {
+    background: rgb(241, 196, 15);
+  }
+
+.popupnpwp input[type="checkbox"]:not(checked):before {
+    background: gray;
+  }
+  
+.popupnpwp input[type="checkbox"]:disabled:before {
+    box-shadow: none;
+    background: #dadcdd;
+  }
+
+.popupnpwp input[type="checkbox"]:checked:after,
+.popupnpwp input[type="checkbox"]:not(checked):after {
+    content: '';
+    position: absolute;
+    left: 4px;
+    top: 8px;
+    background: white;
+    width: 2px;
+    height: 2px;
+    box-shadow: 
+      2px 0 0 white,
+      4px 0 0 white,
+      4px -2px 0 white,
+      4px -4px 0 white,
+      4px -6px 0 white,
+      4px -8px 0 white;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+  }
+
+.popupnpwp input[type="checkbox"]:not(checked):after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0) rotate(45deg);
+}
+
+.popupnpwp input[type="checkbox"]:not(checked):checked:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1) rotate(45deg);
+}
+
+.popupnpwp button{
+	margin: 10px;
+    border:none;
+    padding: 10px;
+    outline: none;
+    background-color: rgb(92, 164, 247);
+    color: white;
+    border-radius: 5px;
+    width: 120px;
+	transition: all 0.25s ease;
+	float: right;
+}
+
+.popupnpwp button:hover, .popupnpwp button:focus{
+  background-color: rgb(241, 173, 15);
+}

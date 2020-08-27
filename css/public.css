@@ -1,0 +1,304 @@
+body{
+	background-image: url("../asset/bg.png");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.header{
+	height: 120px;
+	width: calc(100% - 40px);
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top: 30px;
+}
+
+.header table{
+	width: 100%;
+	height: 100%;
+}
+.header td{
+	font-size: 40px;
+	font-family: "Abel";
+	color: white;
+	text-align: center;
+	vertical-align: middle;
+	padding: 10px;
+}
+
+.header .logo{
+	height: 100%;
+	width: 10%;
+}
+
+.header .logo img{
+	height: 100px;
+	width: auto;
+}
+
+.header .title{
+	height: 100%;
+	width: 90%;
+	text-align: left;
+}
+
+.menucontent{
+	height: calc(100% - 150px);
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.menucontent td{	
+	font-family: "Abel";
+	color: white;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.firstmenu{
+	width: 250px;
+	height: 250px;
+	background-color: rgba(0,60,119, 1);
+	cursor: pointer;
+	position: relative;
+	overflow: hidden;
+}
+
+.firstmenu .menucaption{
+	height: 70px;
+	width: 100%;
+	font-family: "Abel";
+	font-size: 15px;
+	padding: 10px;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-color: rgba(1, 50, 99, 1);
+}
+
+.menucaption{
+	height: 70px;
+	width: 100%;
+	font-family: "Abel";
+	font-size: 15px;
+	padding: 10px;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.menuicon{
+	height: 180px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.menuicon img{
+	height: 35%;
+	width: auto;
+	transition: all 0.5s;
+}
+
+
+span{
+	position: absolute;
+	display: block;
+	width: 0;
+	height: 0;
+	border-radius: 50%;
+	background-color: rgba(255, 255, 255, 0.2);
+	transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	z-index: 1;
+}
+
+.firstmenu:hover span{
+  width: 800px;
+  height: 800px;
+}
+
+.oddmenu:hover span{
+  width: 800px;
+  height: 800px;
+}
+
+.evenmenu:hover span{
+  width: 800px;
+  height: 800px;
+}
+
+.longmenu:hover span{
+  width: 1800px;
+  height: 1800px;
+}
+
+.oddmenu{
+	width: 250px;
+	height: 250px;
+	background-color: rgba(72, 164, 239, 0.6);
+	cursor: pointer;
+	position: relative;
+	overflow: hidden;
+}
+
+.evenmenu{
+	width: 250px;
+	height: 250px;
+	background-color: rgba(29, 144, 238, 0.6);
+	cursor: pointer;
+	position: relative;
+	overflow: hidden;
+}
+
+.largermenuicon{
+	height: 70%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.largermenuicon img{
+	height: 55%;
+	width: auto;
+	transition: all 0.5s;
+}
+
+.largermenucaption{
+	height: 70px;
+	width: 100%;
+	font-family: "Abel";
+	font-size: 28px;
+	padding: 10px;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.longmenu{
+	width: 750px;
+	height: 250px;
+	background-color: rgba(0,103,219,0.4);
+	cursor: pointer;
+	position: relative;
+	overflow: hidden;
+}
+
+.consultationborder{
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(255, 255, 255, 0.8);
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	display: none;
+}
+
+.consultationmenu{
+	height: 400px;
+	width: 300px;
+	cursor: pointer;
+	background-color: rgba(72, 164, 239, 0.8);
+	border-radius: 10px;
+	transition: all 0.5s ease;
+	animation-duration: 0.5s;
+	animation-name: bouncein;
+}
+
+@keyframes bouncein{
+	 0%{
+	    opacity: 0;
+	    transform: scale(0);
+	  }
+	  60%{
+	    opacity: 0.9;
+	    transform: scale(1);
+	  }
+	  80%{
+	    opacity: 1;
+	    transform: scale(0.98);
+	  }
+	  100%{
+	    opacity: 1;
+	    transform: scale(1);
+	  }
+}
+
+a, a:hover, a:active, a:focus{
+	color: transparent;
+	outline: none;
+	margin: 30px;
+}
+
+a:focus .consultationmenu{
+	background-color: rgba(241, 196, 15, 0.8);
+}
+
+.consultationmenu:hover, .consultationmenu:focus{
+	background-color: rgba(241, 196, 15, 0.8);
+}
+
+.consultationmenu table{
+	height: 100%;
+	width: 100%;
+}
+
+.consultationmenu td{
+	font-family: "Abel";
+	font-size: 30px;
+	color: white;
+	text-align: center;
+	vertical-align: middle;
+	padding: 20px;
+}
+
+.consultationmenu img{
+	width: 40%;
+	height: auto;
+}
+
+.closepopup{
+	position: absolute;
+	z-index: 3;
+	top: 20px;
+	right: 20px;
+	height: 30px;
+	width: 30px;
+	cursor: pointer;
+}
+
+.closepopup:hover{
+	animation-name: swinging;
+	animation-duration:0.5s;
+}
+
+@keyframes swinging{
+	30%{
+		transform: rotate(10deg);
+	}
+	70%{
+		transform: rotate(-10deg);
+	}
+	100%{
+		transform: rotate(0deg);
+	}
+}
+
+.closepopup img{
+	height: 100%;
+	width: auto;
+}
