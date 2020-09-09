@@ -1,4 +1,4 @@
-# Visitor's Queue Management System
+# Visitor Management and Queue System
 ![snapshots](https://github.com/enggardwiprihastomo/customer-queue-management-system/blob/master/snapshots.png)
 
 # Description
